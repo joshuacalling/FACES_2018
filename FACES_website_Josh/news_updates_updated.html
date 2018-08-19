@@ -1,127 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="footer, address, phone, icons" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-   
-   <script src="/jquery-3.3.1.min.js"></script>
-   
+    <title>NEWS TEST</title>
 
-    <title>FACES News & Updates</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-panels.min.js"></script>
+        <script src="js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel-noscript.css" />
+            <link rel="stylesheet" href="css/style.css" />
+        </noscript>
 
-    <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-</head>
-<style type="text/css">
-        @font-face {
-    font-family: 'MyWebFont';
-    src: url('webfont.eot'); /* IE9 Compat Modes */
-    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-    url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-    url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-    url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-    }
-    body {
-    background-color: #EAEFF2;
-    }
-    /*--------------------------------HEADER CSS----------------------------*/
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
-    .header{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        transition: transform .5s;
+        <style type="text/css">
 
-    }
-    .header.is-hidden {
-  transform: translateY(-100%);
-    }
-    /*.cd-secondary-nav.fixed {
-        position: fixed;
-        top: 60px;
-    }
-.cd-secondary-nav.slide-up {
-  transform: translateY(-60px);
-}*/
-
-    .container {
-    width: 100%;
-    /*position: relative;*/
-    overflow: hidden;
-}
-.sp-container {
-    position: absolute;
-    top:20px;
-    left: 0px;
-    width: 100%;
-    height: 20%;
-    z-index: 0;
-    background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
-    padding: 55px;
-    overflow: hidden;
-}
-
-    .sp-content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    z-index: 1000;
-}
-.sp-container h2 {
-    position: absolute;
-    top: 50%;
-    line-height: 100px;
-    height: 90px;
-    margin-top: -50px;
-    /*font-family: 'Dancing Script', cursive;*/
-    font-family: 'MyWebFont', Fallback, sans-serif;
-    font-size: 50px;
-    width: 100%;
-    text-align: center;
-    color: transparent;
-    
-}
-    .sp-container h2.frame-5 {
-    color: transparent;
-    text-shadow: 0px 0px 1px #fff;
-}
-    .home-link {
-        position: absolute;
-      left: 80%;
-      top: 30%;
-      /*bottom: 100px;*/
-      margin-left: -50px;
-      text-align: center;
-      width: 100px;
-      color: #fff;
-      padding:5px;
-      font-size: 14px;
-      border: 1px solid black;
-      top: 30%;
-      text-decoration: none;
-      background-color: #66b3ff;
-    }
-    /*----------------------------------------------------------------------*/
-    .main-box{
-        margin-top: 150px;
+        body{
+            font-family: 'Oxygen', sans-serif;
+        }
+        
+        .main-box{
         padding: 10px;
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 17px;
+        }
 
-
-    }
-    .news-updates-columns{
+        .news-updates-columns{
         -webkit-column-count:2;
         -moz-column-count:2;
         column-count: 2;
@@ -130,19 +43,16 @@
         -webkit-column-gap: 40px;
         column-gap: 40px;
 
-
-    }  
-
-     .w3-third{
+        column-rule: 3px solid #a6a6a6;
+        }
+         .w3-third{
         padding: 10px;
 
     }
      .w3-third p{
-        border-bottom-style: double;
-        border-right-style: double;
-        margin-right: 3px;
-        padding-right: 5px;
-        border
+        border:1px double black;
+        padding-left: 3px;
+        border-width: 6px;
         
      }
     
@@ -150,18 +60,19 @@
         border-right: none;
     
     }
+    h1{
+        font-size: 38px;
+    }
+
     h2{
         text-align: center;
         column-span: all;
         text-decoration: underline;
-    }
-    div {
-       /* border: 1px solid black;
-        /*padding: 10px;
-        margin-left: 20px;
-        margin-top: 10px;*/
-    }
-    .video-container{
+        font-size: 24px;
+
+
+    } 
+     .video-container{
         height: 50%;
         padding: 5px;
         margin-left: 20px;
@@ -171,28 +82,38 @@
         height: 400px;
         width: 100%
     }
-    
 
-</style>
+        </style>
+
+
 </head>
 <body>
-</style>
-<body>
-    <header class="header">
-        <div class="sp-container">
-                <div class="sp-content">
-                    <div class="sp-globe"></div>
-                    <h2 class="frame-5">
-                        <span>FACES </span>
-                        <span>2K18</span>
-                        <span></span>
-                    </h2>
-                    <a class="home-link" href="#">Back To Homepage</a>
-                </div>
-        </div>    
-    </header>
+    <!-- Header -->
+        <div id="header">
+            <div class="container">
+                    
+                <!-- Logo -->
+                    <div id="logo">
+                        <h1><a href="#">FACES 2K18</a></h1>
+                        <span>text</span>
+                    </div>
+                
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="1.html">Homepage</a></li>
+                            <li><a href="2.html">Registration</a></li>
+                            <li><a href="3.html">Events</a></li>
+                            <li><a href="4.html">Updates and News</a></li>
+                            <li><a href="5.html">About us</a></li>
+                        </ul>
+                    </nav>
 
-        <div class="main-box" >  
+            </div>
+        </div>
+    <!-- Header -->
+
+    <div class="main-box" >  
             <div class="page-title" style="border: 1px solid black;">
                 <center>
                     <h1>News and Updates</h1>
@@ -365,5 +286,4 @@
         </footer>
 
 </body>
-
 </html>
