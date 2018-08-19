@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <title>NEWS TEST</title>
+    <title>NEWS AND UPDATES</title>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
@@ -27,11 +27,14 @@
 
         body{
             font-family: 'Oxygen', sans-serif;
+            overflow: scroll;
+
         }
         
         .main-box{
         padding: 10px;
-        font-size: 17px;
+        font-size: 15px;
+        margin-top: 10px;
         }
 
         .news-updates-columns{
@@ -51,6 +54,8 @@
     }
      .w3-third p{
         border:1px double black;
+        background-color: #ccddff;
+        border-radius: 6px;
         padding-left: 3px;
         border-width: 6px;
         
@@ -60,8 +65,11 @@
         border-right: none;
     
     }
-    h1{
-        font-size: 38px;
+    .caption{
+        font-size: 36px;
+        text-align: left;
+        padding-left: 10px;
+        text-decoration:none;
     }
 
     h2{
@@ -77,11 +85,74 @@
         padding: 5px;
         margin-left: 20px;
         margin-top: 10px;
+
     }
     video {
         height: 400px;
-        width: 100%
+        width: 100%;
+        border-radius: 30px;
     }
+
+    /*--------------------------Animations----------------------*/
+    #testing{
+        position: relative;
+    }
+    
+    #heartbeat{
+        font-size: 70px;
+        font-weight: bold;
+        -webkit-animation-name: heartbeat;
+        -webkit-animation-duration: 1.3s;
+        -webkit-animation-iteration-count: infinite;
+
+        animation-name: heartbeat;
+        animation-duration: 1.3s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+       
+    }
+
+    @-webkit-keyframes heartbeat {
+      0% {
+       transform: scale(1);
+
+     }
+     25% {
+       transform: scale(1.03);
+       background-color: #660000;
+     }
+     40% {
+       transform: scale(1);
+     }
+     60% {
+       transform: scale(1.03);
+       color: #660000;
+     }
+     100% {
+       transform: scale(1);
+     }
+    }
+
+    @keyframes heartbeat {
+    0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.03);
+    color:#660000;
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.03);
+    color: #660000;
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
+    /*--------------------------Animations END----------------------*/
 
         </style>
 
@@ -94,17 +165,17 @@
                     
                 <!-- Logo -->
                     <div id="logo">
-                        <h1><a href="#">FACES 2K18</a></h1>
-                        <span>text</span>
+                        <p id="heartbeat">FACES 2K18</p>
+                        <p >SLOGAN</p>
                     </div>
                 
                 <!-- Nav -->
                     <nav id="nav">
                         <ul>
-                            <li><a href="1.html">Homepage</a></li>
-                            <li><a href="2.html">Registration</a></li>
+                            <li><a href="homepage-loading-anim.html">Homepage</a></li>
+                            <li><a href="student_registration.html">Registration</a></li>
                             <li><a href="3.html">Events</a></li>
-                            <li><a href="4.html">Updates and News</a></li>
+                            <li><a href="news_updates.html">Updates and News</a></li>
                             <li><a href="5.html">About us</a></li>
                         </ul>
                     </nav>
@@ -114,9 +185,9 @@
     <!-- Header -->
 
     <div class="main-box" >  
-            <div class="page-title" style="border: 1px solid black;">
+            <div class="page-title">
                 <center>
-                    <h1>News and Updates</h1>
+                    <h1 class="caption">Around The Campus....</h1>
                 </center>
             </div>
             <div class="video-container">
@@ -260,7 +331,7 @@
 
                 <div>
                     <i class="fa fa-envelope"></i>
-                    <p style="border-right: none;"><a href="mailto:joshuacalling@gmail.com">(INSERT EMAIL HERE)</a></p>
+                    <p style="border-right: none;"><a href="mailto: support@fcrit.ac.in">support@fcrit.ac.in</a></p>
                 </div>
 
             </div>
