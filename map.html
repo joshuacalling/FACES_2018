@@ -1,0 +1,498 @@
+<?php 
+include("display.php");
+
+          
+
+?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
+
+
+    <title>HOME</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,4000,600,700" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/heartbeat.css">
+    	<style>
+        
+.previous {
+    background-color: cyan;
+    color: black;
+}
+
+.next {
+    background-color: cyan;
+    color: white;
+    font-style: bold;
+}
+
+.round {
+    border-radius: 50%;
+}
+    
+    .entry-title{
+    background-color: aquamarine;
+}
+
+	.entry-title h2{
+		font-family: 'Kalam';
+	}
+#edit-footer{
+    background-color: transparent;
+}
+.heart-icon{
+    height: 32px;
+}
+.footer-company-about{
+    font-size: 16px;'
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+
+            }
+</style>
+</head>
+
+<body style="background-image: url(http://papers.co/wallpaper/papers.co-sj57-sky-blue-clear-white-gradation-blur-25-wallpaper.jpg)";>
+    <header class="site-header">
+        <div class="header-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-10 col-lg-4">
+                        <h1 class="site-branding flex">
+                            <a class="heartbeat" id="heartbeat" href="#" style=" font-size:50px; ">FACES 2K18</a>
+                        </h1>
+                    </div>
+
+                    <div class="col-2 col-lg-8">
+                        <nav class="site-navigation">
+                            <div class="hamburger-menu d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div><!-- .hamburger-menu -->
+
+                            <ul>
+                                <li><a href="index.php">HOME</a></li>
+                                <li><a href="council.php">MEET OUR COUNCIL</a></li>
+                                <li><a href="updates.php">NEWS AND UPDATES</a></li>
+                                <li><a href="boom-edit/eve.html">EVENTS</a></li>
+                                <!--<li><a href="sponsors.html">SPONSORS</a></li>
+                            <!--    <li><a href="#">CONTACT</a></li> -->
+                                <li><a href="login.php">LOGIN</a></li>
+                                
+                                
+                            </ul><!-- flex -->
+                        </nav><!-- .site-navigation -->
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- container-fluid -->
+        </div><!-- header-bar -->
+    </header><!-- .site-header -->
+
+    <div class="hero-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 offset-lg-2 col-lg-10">
+                    <div class="entry-header">
+                        <h2>Hakuna Matata</h2>
+
+                        <div class="entry-meta-date" style="color:#f9e445;">
+                            10.11.2018
+                        </div><!-- .entry-meta-date -->
+                    </div><!-- .entry-header -->
+
+                    <div class="countdown flex flex-wrap justify-content-between" data-date="2018/10/10" id="notyet">
+                        <div class="countdown-holder">
+                            <div class="dday"></div>
+                            <label>Days</label>
+                        </div><!-- .countdown-holder -->
+
+                        <div class="countdown-holder">
+                            <div class="dhour"></div>
+                            <label>Hours</label>
+                        </div><!-- .countdown-holder -->
+
+                        <div class="countdown-holder">
+                            <div class="dmin"></div>
+                            <label>Minutes</label>
+                        </div><!-- .countdown-holder -->
+
+                        <div class="countdown-holder">
+                            <div class="dsec"></div>
+                            <label>Seconds</label>
+                        </div><!-- .countdown-holder -->
+                    </div><!-- .countdown -->
+					
+                </div><!-- .col-12 -->
+            </div><!-- row -->
+
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="entry-footer">
+                        <a href="registration.php" class="btn">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .container -->
+    </div><!-- .hero-content -->
+
+    <div class="content-section">
+           <div class="row">
+           <div class="col-12">
+            <div class="the-complete-lineup">
+              <div class="entry-title">
+                        <p>JUST THE BEST</p>
+                        <h2>THE THEME</h2>
+                        <br>
+                    </div><!-- entry-title -->
+              
+            <div class="container">
+                <div class="home-page-last-news-wrap">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                           <img src="images/1.png" alt="" class="img-fluid" />
+                           </div><!-- .col-6 -->
+
+                        <div class="col-12 col-md-7">
+                          <p style="color: black; font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
+                    Hakuna Matata! What a wonderful phrase! Hakuna Matata! Ain’t no passing craze. It means no worries, for the rest of your days. It’s our problem free; philosophy Hakuna Matata! By Timon and Pumba FACES has annually been a host to a mixture of events. As we enter our 25th iteration we wish to incorporate a silver lining to our cloud and make the few days of our busy life trouble free. This FACES we present to you HAKUNA MATATA days of our life. HAKUNA MATATA tells us to live freely, and enjoy every minute of life rather than worrying about things.<br>HAKUNA MATATA is a phrase that all of us students have been listening to throughout our childhood, evoking a strong feeling of nostalgia. This time we have included as much input as we could get from the entire college, in virtue of molding every event to cater to every need. <br>We have loads of sports and cultural events aimed to bring students from every branch together. We aim to develop each of our students holistically so that the challenges they may face in events prepare them to handle their future.<br>Every event has been crafted meticulously, so that everyone can participate. Also, there will be “no worries” as we have included a plethora of opportunities throughout FACES. This year FACES promises to be an ode to the stress-free days of childhood    
+                     </p>
+
+                          
+                          </div><!-- col-6 -->
+                    </div><!-- row -->
+                </div>
+            </div>
+            </div><!-- the-complete-lineup -->
+         </div><!-- col -->
+        </div><!-- row -->
+           
+
+            <div class="row">
+                    <div class="col-12">
+                        <div class="the-complete-lineup">
+                         <div class="entry-title">
+                            <p>JUST THE BEST</p>
+                            <h2>SCORES</h2>
+                            <br>
+            
+                        </div><!-- entry-title -->
+                       
+                        <div class="milestones">
+                            <div class="row flex flex-wrap justify-content-between">
+                                <div class="d-col-n mt-5 mt-lg-0">
+                                    <div class="counter-box">
+                                        <div class="flex justify-content-center">
+                                            <div class="start-counter" data-to="<?php echo $sum1; ?>" data-speed="4000"></div>
+                                        </div>
+
+                                        <h3 class="entry-title">COMPS</h3><!-- entry-title -->
+                                    </div><!-- counter-box -->
+                                </div><!-- d-col-n -->
+
+                                <div class="d-col-n mt-5 mt-lg-0">
+                                    <div class="counter-box">
+                                        <div class="flex justify-content-center">
+                                            <div class="start-counter" data-to="<?php echo $sum2; ?>" data-speed="4000"></div>
+                                        </div>
+                                   <h3 class="entry-title">EXTC</h3><!-- entry-title -->
+                                    </div><!-- counter-box -->
+                                </div><!-- d-col-n -->
+
+                                <div class="d-col-n mt-5 mt-lg-0">
+                                    <div class="counter-box">
+                                        <div class="flex justify-content-center">
+                                            <div class="start-counter" data-to="<?php echo $sum3; ?>" data-speed="4000"></div>
+                                            
+                                        </div>
+
+                                        <h3 class="entry-title">ELECT</h3><!-- entry-title -->
+                                    </div><!-- counter-box -->
+                                </div><!-- d-col-n -->
+
+                                <div class="d-col-n mt-5 mt-lg-0">
+                                    <div class="counter-box">
+                                        <div class="flex justify-content-center">
+                                            <div class="start-counter" data-to="<?php echo $sum4; ?>" data-speed="4000"></div>
+                                        </div>
+
+                                        <h3 class="entry-title">MECH</h3><!-- entry-title -->
+                                    </div><!-- counter-box -->
+                                </div><!-- d-col-n -->
+
+                                <div class="d-col-n mt-5 mt-lg-0">
+                                    <div class="counter-box">
+                                        <div class="flex justify-content-center">
+                                            <div class="start-counter" data-to="<?php echo $sum5; ?>" data-speed="4000"></div>
+                                        </div>
+
+                                        <h3 class="entry-title">IT</h3><!-- entry-title -->
+                                    </div><!-- counter-box -->
+                                </div><!-- d-col-n -->
+                            </div>
+                            </div>
+                        </div><!-- the-complete-lineup -->
+                    </div><!-- col-12 -->
+                </div><!-- row -->
+           
+           
+            <div class="row">
+                <div class="col-12">
+                    <div class="the-complete-lineup">
+                        <div class="entry-title">
+                            <p>JUST THE BEST</p>
+                            <h2>GALLERY</h2>
+                            <br>
+                        </div><!-- entry-title -->
+                        
+                        <div class="wrapper">
+
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<a href="#" target="_blank"><img src="images/IMG-20180808-WA0005.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Our Council</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="images/6.png" alt="image2"/></a>
+						<div class="sb-description">
+							<h3>Sunn yaar chill maar!!</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="images/7.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>contestants on move</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="images/IMG-20180815-WA0003.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Sqaud Behind the Scene..</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="images/3.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>All about the high notes</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="images/4.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Tug of war!!</h3>
+						</div>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="images/5.png" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Battle for the best!!</h3>
+						</div>
+					</li>
+				</ul>
+
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+				
+                <a href="#" class="previous round">&laquo;</a>
+                <a href="#" class="next round">&raquo;</a>
+				</div>
+
+			</div><!-- /wrapper -->
+
+                   <div class="row">
+                    <div class="col-12">
+                        <div class="the-complete-lineup">
+                         <div class="entry-title">
+                            <p>JUST THE BEST</p>
+                            <h2>DEDICATION SCORES</h2>
+                            <br>
+            
+                        </div><!-- entry-title -->
+                       
+                        <div class="milestones">
+                            <div class="row flex flex-wrap justify-content-between">
+                                <div class="d-col-n mt-5 mt-lg-0">
+                                    <div class="counter-box">
+                                        <div class="flex justify-content-center">
+                                            <div class="start-counter" data-to="<?php echo $dsum1; ?>" data-speed="4000"></div>
+                                        </div>
+
+                                        <h3 class="entry-title">COMPS</h3><!-- entry-title -->
+                                    </div><!-- counter-box -->
+                                </div><!-- d-col-n -->
+
+                                <div class="d-col-n mt-5 mt-lg-0">
+                                    <div class="counter-box">
+                                        <div class="flex justify-content-center">
+                                            <div class="start-counter" data-to="<?php echo $dsum2; ?>" data-speed="4000"></div>
+                                        </div>
+                                   <h3 class="entry-title">EXTC</h3><!-- entry-title -->
+                                    </div><!-- counter-box -->
+                                </div><!-- d-col-n -->
+
+                                <div class="d-col-n mt-5 mt-lg-0">
+                                    <div class="counter-box">
+                                        <div class="flex justify-content-center">
+                                            <div class="start-counter" data-to="<?php echo $dsum3; ?>" data-speed="4000"></div>
+                                            
+                                        </div>
+
+                                        <h3 class="entry-title">ELECT</h3><!-- entry-title -->
+                                    </div><!-- counter-box -->
+                                </div><!-- d-col-n -->
+
+                                <div class="d-col-n mt-5 mt-lg-0">
+                                    <div class="counter-box">
+                                        <div class="flex justify-content-center">
+                                            <div class="start-counter" data-to="<?php echo $dsum4; ?>" data-speed="4000"></div>
+                                        </div>
+
+                                        <h3 class="entry-title">MECH</h3><!-- entry-title -->
+                                    </div><!-- counter-box -->
+                                </div><!-- d-col-n -->
+
+                                <div class="d-col-n mt-5 mt-lg-0">
+                                    <div class="counter-box">
+                                        <div class="flex justify-content-center">
+                                            <div class="start-counter" data-to="<?php echo $dsum5; ?>" data-speed="4000"></div>
+                                        </div>
+
+                                        <h3 class="entry-title">IT</h3><!-- entry-title -->
+                                    </div><!-- counter-box -->
+                                </div><!-- d-col-n -->
+                            </div>
+                            </div>
+                        </div><!-- the-complete-lineup -->
+                    </div><!-- col-12 -->
+                </div><!-- row -->     
+                        
+                        
+                    </div>   <!-- the-complete-lineup -->
+                </div><!-- col-12 -->
+            </div><!-- row -->
+      
+
+        
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-cover-title flex justify-content-center align-items-center">
+            <h5></h5>
+        </div><!-- .site-footer -->
+
+        <div class="footer-content-wrapper">
+             <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="entry-title" id="edit-footer">
+                            <a href="#">FACES 2K18</a>
+                            <br><br
+                        </div><!-- entry-title -->
+
+                        <iframe align="right" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.677589897185!2d72.99093846437684!3d19.07790795687133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6cae0d8c5ab%3A0xbbf4481d662ca2d8!2sFr.+C.+Rodrigues+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1539762275244" width="600" height="120" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+                       <i class="fa fa-map-marker"></i>
+                    <p style="border-right: none; text-color:white;"><span>Agnel Technical Education Complex <br> Sector 9A Vashi<br></span>Navi Mumbai - 400703<br>Maharashtra, India</p>
+                        </div>
+                    <center>
+                        <br><br>
+                        <div class="copyright-info" align="left">
+                           <p class="footer-company-about" align="left">
+                               <b> With <img class="heart-icon heartbeat" id="heartbeat" src="images/heart.png"> Department of Information Technology</b><br>#jam
+                           </p>
+                           </div><!-- copyright-info -->
+        
+                    </center>
+                    
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- footer-content-wrapper -->
+    </footer><!-- site-footer -->
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+</body>
+</html>
