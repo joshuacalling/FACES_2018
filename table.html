@@ -1,0 +1,84 @@
+<?php
+include("db_conn.php");
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML to PDF</title>
+  <style>
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+      background: #0080ff;
+    color: white;
+}
+</style>
+</head>
+<body>
+	<!-- 
+	content of this area will be the content of your PDF file 
+	-->
+	<div id="HTMLtoPDF">
+<h2 style="font-style: italic; font-size: 40px ">
+        <center>Gotcha your Details....!!</center></h2>
+        <table id="customers">
+  <tr>
+    <th>Event</th>
+                                    <th>Name</th>
+                                    <th>Rollno</th>
+                                    <th>Branch</th>
+                                    <th>semester</th>
+                                    <th>email</th>
+                                    <th>phone</th>
+  </tr>
+  
+                           
+                            <tbody>
+                    
+              <?php 
+                        $comps_list="SELECT e.event_name, s.firstname, s.rollno, s.branch, s.semester, s.email, s.phone FROM events1 e,signup s WHERE e.rollno=s.rollno and s.branch='comps';";
+                        $comps_list_query=mysqli_query($conn,$comps_list);
+                        while ($row = mysqli_fetch_assoc($comps_list_query))
+            
+		{   ?>          <tr>
+                        <td><?php echo $row['event_name']; ?> </td>
+                        <td><?php echo $row['firstname']; ?> </td>
+                        <td><?php echo $row['rollno']; ?> </td>
+                        <td><?php echo $row['branch']; ?> </td>
+                        <td><?php echo $row['semester']; ?> </td>
+                        <td><?php echo $row['email']; ?> </td>
+                        <td><?php echo $row['phone']; ?> </td>
+            </tr>
+	<?php	}?>
+                            </tbody>
+                        </table>
+
+                       
+
+	</div>
+    <br><br><br>
+	<!-- here we call the function that makes PDF -->
+	<a href="#" onclick="HTMLtoPDF()">Download PDF</a>
+
+	<!-- these js files are used for making PDF -->
+	<script src="js/jspdf.js"></script>
+	<script src="js/jquery-2.1.3.js"></script>
+	<script src="js/pdfFromHTML.js"></script>
+</body>
+</html>

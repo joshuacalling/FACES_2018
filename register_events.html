@@ -1,0 +1,326 @@
+<?php session_start();
+include("student_events.php"); ?>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans" rel="stylesheet"><!-- Bootstrap CSS -->
+       
+
+    <title>Participate</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+         .entry-title{
+                font-family: Dancing Script, cursive;
+                
+            }
+    
+ .main{
+  height:500px;
+  width:700px;
+  /*border:1px solid #fff;*/
+  margin:7% auto;
+}
+.main div{
+  display: inline-block;
+  border:none;
+}
+.main .left{
+  width:50%;
+  float:left;
+  /*border-right:1px solid #fff;*/
+  height:100%;
+  /*padding:15px 0 0 0;*/
+  background-color:#fff;
+  position: relative;
+}
+.left h1{
+  text-align: center;
+    color: black;
+  /*padding-left:120px;*/
+  padding-top:100px;
+  margin-bottom: 0;
+}
+.left p{
+  margin-top:0;
+  text-align:center;
+  color:grey;
+}
+.left form{
+  text-align: center;
+}
+.left form input{
+  text-align:center;
+  width:70%;
+  height:35px;
+  margin-bottom:10px;
+  border:none;
+  border:1px solid #F8F8F8;
+  background-color:#F8F8F8;
+  border-radius:25px;
+}
+.left form input:focus{
+  outline:none;
+}
+::-webkit-input-placeholder{
+  color:grey;
+  letter-spacing: 1px;
+}
+.left form input[type="submit"]{
+  background-color:#FFBF37;
+  color:#fff;
+  font-weight: bold;
+}
+.left p.or{
+  color:grey;
+  font-size:15px;
+  border:1px solid #f8f8f8;
+  width:40px;
+  font-weight:200;
+  height:30px;
+  padding-top:10px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 42%;
+  left: 94%;
+  z-index:10;
+  /*text-align:center;*/
+}
+        
+         #edit-footer{
+    background-color: transparent;
+}
+.heart-icon{
+    height: 32px;
+}
+.footer-company-about{
+    font-size: 16px;'
+    align-content: center;
+    text-align: center;
+    color: white;
+    
+
+        }
+
+    </style>
+</head>
+
+<body class="contact-page">
+       <header class="site-header">
+        <div class="header-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-10 col-lg-4">
+                        <h1 class="site-branding flex">
+                            <a href="#">FACES 2K18</a>
+                        </h1>
+                    </div>
+
+                    <div class="col-2 col-lg-8">
+                        <nav class="site-navigation">
+                            <div class="hamburger-menu d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div><!-- .hamburger-menu -->
+
+                            <ul>
+                                <li><a href="index.php">HOME</a></li>
+                                <li><a href="council.php">MEET OUR COUNCIL</a></li>
+                                <li><a href="updates.php">NEWS AND UPDATES</a></li>
+                                <li><a href="boom-edit/eve.html">EVENTS</a></li>
+                                
+                                <li><a href="logout.php">LOGOUT</a></li>
+                                
+                                
+                            </ul><!-- flex -->
+                        </nav><!-- .site-navigation -->
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- container-fluid -->
+        </div><!-- header-bar -->
+    </header><!-- .site-header -->
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                        <h2 class="entry-title">Register Events Here</h2>
+
+                        <!-- entry-header -->
+                </div><!-- col-12 -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- page-header -->
+        
+      <div class="container" style=" background: linear-gradient(to top, #33ccff 80%, #ffffff 100%)">
+        <div class="main-content" style=" background: linear-gradient(to top, #33ccff 23%, #003366 87%)">
+        <form action="" method="post">
+         <div class="left">
+           <div class="col-12 col-lg-6">
+            <h1 style="font-style: italic;  color: #F0FFFF">Welcome Folks..!</h1>
+            
+             <table class="table table-user-information">
+                    <tbody style="font-family: inherit; font-size: 20px;">
+                      <tr>
+                        <td>Register No.:</td>
+                        <td><?php echo $_SESSION['rollno']; ?></td>
+                      </tr>
+                      <tr>
+                        <td>Name :</td>
+                        <td><?php echo $_SESSION['fname']; echo " "; echo $_SESSION['lname']; ?></td>
+                      </tr>
+                        <tr>
+                        <td>Phone Number</td>
+                        <td><?php echo $_SESSION['phone']; ?><br>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>Email</td>
+                        <td><a href="#"><?php echo $_SESSION['email']; ?></a></td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+            
+           
+          </div>
+    </div>
+         
+           <div class="col-12 col-lg-6">
+            <h1 style="font-style: italic; text-align: center; ">Events </h1>
+            
+            
+             <table class="table table-user-information">
+                    <tbody style="font-family: inherit; font-size: 20px;">
+                     <h3>Day1</h3>
+                      <tr>
+                        <td>Cultural :</td>
+                        <td >
+                        <input type="checkbox" name="cultural1[]" value="Apple" /><label>MOCK CID</label><br/>
+                        <input type="checkbox" name="cultural1[]" value="Blackberry" /><label>DANCE</label><br/>
+                        <input type="checkbox" name="cultural1[]" value="Sony Ericson" /><label>SINGING</label><br/>
+                        <input type="checkbox" name="cultural1[]" value="Motorola" /><label>STRRET PLAY</label><br/>
+                        <input type="checkbox" name="cultural1[]" value="Nokia" /><label>MINUTES TO WIN</label><br/>
+                       </td>
+
+                      </tr>
+                      <tr>
+                        <td>Sports :</td>
+                        <td><input type="checkbox" name="sports1[]" value="C/C++"><label>SWIMMING</label><br/>
+                            <input type="checkbox" name="sports1[]" value="Java"><label>BASKETBALL</label><br/>
+                            <input type="checkbox" name="sports1[]" value="PHP"><label>MARBLES</label><br/>
+                          <input type="checkbox" name="sports1[]" value="python"><label>KHO-KHO</label><br/>
+                            
+                         
+                        </td>
+                      </tr>
+                      <br>
+                      <th>Day2</th>
+                      <tr>
+                        <td>Cultural :</td>
+                        <td >
+                        <input type="checkbox" name="cultural1[]" value="Apple" /><label>BAND EVENT</label><br/>
+                        <input type="checkbox" name="cultural1[]" value="Blackberry" /><label>SOLO SINGING</label><br/>
+                        <input type="checkbox" name="cultural1[]" value="Sony Ericson" /><label>INSTRUMENTATION</label><br/>
+                        <input type="checkbox" name="cultural1[]" value="Motorola" /><label>GROUP DANCE</label><br/>
+                        <input type="checkbox" name="cultural1[]" value="Nokia" /><label>LASER TAG</label><br/>
+                       </td>
+
+                      </tr>
+                      <tr>
+                        <td>Sports :</td>
+                        <td><input type="checkbox" name="sports1[]" value="C/C++"><label>BASEBALL</label><br/>
+                            <input type="checkbox" name="sports1[]" value="Java"><label>BADMINTON</label><br/>
+                            <input type="checkbox" name="sports1[]" value="PHP"><label>TABLE-TENNIS</label><br/>
+                            <input type="checkbox" name="sports1[]" value="python"><label>TUG OF WAR</label><br/>
+                            
+                         
+                        </td>
+                      </tr>
+                      
+                    <tr>
+                    <td>
+                      <br>
+                           <input align="center" color="red" type="submit" value="Done" name="done" id="done">
+                         </td>
+                     </tr>
+                    </tbody>
+                  </table>
+               </form>
+            
+           
+          </div>
+    
+    
+           
+            
+ </div>
+    </div>
+
+
+
+
+
+
+
+  <footer class="site-footer">
+        <div class="footer-cover-title flex justify-content-center align-items-center">
+            <h5></h5>
+        </div><!-- .site-footer -->
+
+        <div class="footer-content-wrapper">
+             <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="entry-title">
+                            <a href="#">FACES 2K18</a>
+                        </div><!-- entry-title -->
+                        <i class="fa fa-map-marker"></i>
+                    <p style="border-right: none;"><span>FCRIT Sector 9A Vashi</span>Navi Mumbai - 400703<br>Maharashtra, India</p>
+                        </div>
+                        
+                        <div class="copyright-info">
+                          <p class="footer-company-about" style="color: white;">
+                               <b> With <img class="heart-icon heartbeat" id="heartbeat" src="images/heart.png"> Department of Information Technology</b><br>#jam
+                           </p>
+                           
+                           </div><!-- copyright-info -->
+                          
+
+                        
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- footer-content-wrapper -->
+    </footer><!-- site-footer -->
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+</body>
+</html>
+
