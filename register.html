@@ -1,0 +1,267 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/heartbeat.css">
+  <title>Register Here</title>
+   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans" rel="stylesheet"><!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+  <style>
+    *{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: century gothic, segoe ui;
+}
+body{
+	background-color: #eee;
+}
+.main{
+	width: 400px;
+	background-color: #ccc;
+	margin: 75px auto;
+	border: 2px solid #fff;
+	box-shadow: 0 0 20px #000;
+}
+.header{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #c13;
+	color: #fff;
+	font-size: 18px;
+}
+#frmBox{
+	padding: 10px;
+}
+.inp{
+	width: 100%;
+	padding: 8px;
+	font-size: 17px;
+	margin-bottom: 8px;
+	border: 1px solid #c77;
+	border-radius: 2px;
+	color: #c13;
+}
+::-webkit-input-placeholder{
+	color: #c78;
+}
+.inp:focus{
+	outline: none;
+	box-shadow: 0 0 6px #c55;
+}
+.sub-btn{
+	width: 100%;
+	border: none;
+	padding: 7px;
+	font-size: 18px;
+	background-color: #c12;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.sub-btn:focus{
+	outline: none;
+}
+.sub-btn:hover{
+	background-color: #c44;
+}
+#success{
+	width: 100%;
+	text-align: center;
+	color: #c04;
+	margin-top: 10px;
+	font-size: 18px;
+}
+    
+    </style>
+  <style type="text/css">
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-style: 
+    }
+
+    /* Bottom left text */
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+            
+            .entry-title{
+                font-family: Dancing Script, cursive;
+                
+            }
+            #edit-footer{
+    background-color: transparent;
+}
+.heart-icon{
+    height: 32px;
+}
+.footer-company-about{
+    font-size: 16px;'
+    align-content: center;
+    text-align: center;
+   
+
+}
+
+    </style> 
+    
+    
+</head>
+
+<body class="contact-page" style="background: linear-gradient(to bottom, #00ffff 0%, #ffffff 100%);">
+   <header class="site-header">
+        <div class="header-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-10 col-lg-4">
+                        <h1 class="site-branding flex">
+                            <a href="index.php">FACES 2K18</a>
+                        </h1>
+                    </div>
+
+                    <div class="col-2 col-lg-8">
+                        <nav class="site-navigation">
+                            <div class="hamburger-menu d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div><!-- .hamburger-menu -->
+
+                            <ul>
+                                <li><a href="index.php">HOME</a></li>
+                                <li><a class="active">MEET OUR COUNCIL</a></li>
+                                <li><a href="updates.php">NEWS AND UPDATES</a></li>
+                                <li><a href="boom-edit/eve.html">EVENTS</a></li>
+                                
+                                
+                                <li><a href="login.php">LOGIN</a></li>
+                                
+                                
+                            </ul><!-- flex -->
+                        </nav><!-- .site-navigation -->
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- container-fluid -->
+        </div><!-- header-bar -->
+    </header><!-- .site-header -->
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                        <h2 class="entry-title">Meet The Council</h2>
+
+                        <!-- entry-header -->
+                </div><!-- col-12 -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- page-header -->
+    
+  <div class="main" style=" background: linear-gradient(to bottom, #0000ff 0%, #0099cc 100%);" >
+    <div class="header" style="background-color: #001433">REGISTER..!!!</div>
+    <form action="insert.php" id="frmBox" method="post" onsubmit="return formSubmit();" style="">
+      <input type="text" name="name" class="inp" placeholder="Enter Name..." required>
+       <input type="text" name="lastname" class="inp" placeholder="Enter your lastname " required>
+       <input type="text" name="rollno" class="inp" placeholder="Enter your rollno " required>
+        <label for="branch" style="color: #fefbd8">Branch</label>
+            <select class="inp" name="branch" id="branch" style="color: #fefbd8">
+              <option value="it" style="color: #92a8d1">IT</option>
+              <option value="comps" style="color: #92a8d1">Computer Science</option>
+              <option value="mech" style="color: #92a8d1">Mechanical</option>
+              <option value="extc" style="color: #92a8d1">EXTC</option>
+              <option value="elect" style="color: #92a8d1">Electrical</option>
+            </select>
+        <label for="semester" style="color: #fefbd8">Semester</label>
+            <select class="inp" name="semester" id="semester" style="color: #fefbd8">
+              <option value="1" style="color: #92a8d1">I</option>
+              <option value="3" style="color: #92a8d1">III</option>
+              <option value="5" style="color: #92a8d1">V</option>
+              <option value="7" style="color: #92a8d1">VII</option>
+            </select>
+      <input type="email" name="email" class="inp" placeholder="Enter Email..." required>
+      <input type="text" name="phone" class="inp" placeholder="Enter Phone..." required>
+      <input type="text" name="pass" class="inp" placeholder="Enter Password..." required>
+      <input type="submit" name="submit" class="sub-btn" value="Submit" style="background-color: #001433">
+      <h3 id="success"></h3>
+    </form>
+  </div>
+  
+        
+     <footer class="site-footer">
+        <div class="footer-cover-title flex justify-content-center align-items-center">
+            <h5></h5>
+        </div><!-- .site-footer -->
+
+        <div class="footer-content-wrapper">
+             <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="entry-title" id="edit-footer">
+                            <a href="#">FACES 2K18</a>
+                        </div><!-- entry-title -->
+                        <i class="fa fa-map-marker"></i>
+                    <p style="border-right: none;"><span>FCRIT Sector 9A Vashi</span>Navi Mumbai - 400703<br>Maharashtra, India</p>
+                        </div>
+                    <center>
+                        <br><br><br>
+                        <div class="copyright-info">
+                           <p class="footer-company-about">
+                               <b> With <img class="heart-icon heartbeat" id="heartbeat" src="images/heart.png"> Department of Information Technology</b><br>#jam
+                           </p>
+                           </div><!-- copyright-info -->
+                    </center>
+                    
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- footer-content-wrapper -->
+    </footer><!-- site-footer -->
+
+    
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+      
+       <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+   
+   
+   
+  
+</body>
+
+</html>
